@@ -6,7 +6,7 @@
       name="viewport"
       content="initial-scale=1,maximum-scale=1,user-scalable=no"
     />
-    <title>ArcGIS JavaScript API - WebGIS应用示例</title>
+    <title>福州市公共事件</title>
     <link
       rel="stylesheet"
       href="https://js.arcgis.com/4.26/esri/themes/light/main.css"
@@ -42,7 +42,7 @@
       }
 
       #legend {
-        /*position: absolute;*/
+        position: absolute;
         top: 1px;
         right: 10px;
         z-index: 999;
@@ -152,7 +152,7 @@
         const layerList = new LayerList({
           view: view
         });
-        view.ui.add(layerList, { position: "top-right" });
+        view.ui.add(layerList, { position: "bottom-left" });
 
         // ------------------------------------------------------------------
         // 设置距离测量控件
@@ -290,7 +290,7 @@
     <div id="header">福州市公共事件查看地图</div>
     <div id="viewDiv"></div>
     <!--<div id="basemapGallery"></div>-->
-    <!--<div id="legend"></div>-->
+    <div id="legend"></div>
     <!--<div id="search"></div>-->
     <!--<div id="layerList"></div>-->
     <div id="tools"></div>
